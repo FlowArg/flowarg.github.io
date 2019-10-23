@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fr.flowarg</groupId>
   <artifactId>gunsofchickens</artifactId>
-  <version>3.0</version>
+  <version>1.12.2-3.0</version>
   <packaging>pom</packaging>
   <name>gunsofchickens</name>
   <description>A Minecraft mod.</description>
