@@ -16,11 +16,6 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  <scm>
-    <connection>scm:git:git://github.com/FlowArg/Guns-of-Chickens.git</connection>
-    <developerConnection>scm:git:git@github.com:FlowArg/Guns-of-Chickens.git</developerConnection>
-    <url>https://github.com/FlowArg/Guns-of-Chickens</url>
-  </scm>
   <issueManagement>
     <system>github</system>
     <url>https://github.com/FlowArg/Guns-of-Chickens/issues</url>
