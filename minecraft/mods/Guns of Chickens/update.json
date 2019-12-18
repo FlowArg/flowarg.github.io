@@ -1,8 +1,8 @@
 { 
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/guns-of-chickens", 
     "promos": { 
-            "1.12.2-latest": "3.1",
-            "1.12.2-recommended": "3.0"
+            "1.12.2-latest": "1.12.2-3.1",
+            "1.12.2-recommended": "1.12.2-3.0"
     },
 	
     "1.12.2": {
@@ -11,7 +11,7 @@
 		"release2.2": "Fix Kiki's textures",
 		"release2.3": "Fix TNT and Chickens Launchers, Optimize code",
 		"release2.4": "Fix PVP Apple bug",
-		"3.0": "Reconstructing the mod and add new features : discover it ^^",
-		"3.1": "Fix bugs, add tooltips, change compatibility with FlowUtils to FlowUtils-4.0"
+		"1.12.2-3.0": "Reconstructing the mod and add new features : discover it ^^",
+		"1.12.2-3.1": "Fix bugs, add tooltips, change compatibility with FlowUtils to FlowUtils-4.0"
     }
 } 
