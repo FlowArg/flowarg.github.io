@@ -3,12 +3,13 @@
   <groupId>fr.litarvan</groupId>
   <artifactId>openlauncherlib</artifactId>
   <versioning>
-    <latest>3.0.6-FLOWARGVERSION</latest>
-    <release>3.0.6-FLOWARGVERSION</release>
+    <latest>3.0.7-FLOWARGVERSION</latest>
+    <release>3.0.7-FLOWARGVERSION</release>
     <versions>
       <version>3.0.5-FLOWARGVERSION</version>
       <version>3.0.6-FLOWARGVERSION</version>
+      <version>3.0.7-FLOWARGVERSION</version>
     </versions>
-    <lastUpdated>20200129194726</lastUpdated>
+    <lastUpdated>20200202100828</lastUpdated>
   </versioning>
 </metadata>
