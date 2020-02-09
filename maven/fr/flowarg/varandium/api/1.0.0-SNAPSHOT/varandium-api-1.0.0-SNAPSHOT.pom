@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>fr.flowarg.varandium</groupId>
-  <artifactId>varandium-api</artifactId>
+  <artifactId>api</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>varandium-api</name>
+  <name>api</name>
   <description>API for Varandium</description>
   <url>https://github.com/FlowArg/</url>
 </project>

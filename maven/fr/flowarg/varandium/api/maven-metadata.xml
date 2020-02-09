@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>fr.flowarg.varandium</groupId>
-  <artifactId>varandium-api</artifactId>
+  <artifactId>api</artifactId>
   <versioning>
     <latest>1.0.0-SNAPSHOT</latest>
     <versions>
