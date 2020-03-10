@@ -8,16 +8,16 @@
   <packaging>pom</packaging>
   <name>arilibfx</name>
   <description>Cette librairie me sert juste pour mes launcher et mes tutoriels.</description>
-  <url>https://github.com/FlowArg/AriLibFX</url>
+  <url>https://github.com/Arinonia/AriLibFX</url>
   <licenses>
     <license>
       <name>LICENSE</name>
-      <url>https://github.com/FlowArg/AriLibFX/blob/master/LICENSE</url>
+      <url>https://github.com/Arinonia/AriLibFX/blob/master/LICENSE</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
   <issueManagement>
     <system>github</system>
-    <url>https://github.com/FlowArg/AriLibFX/issues</url>
+    <url>https://github.com/Arinonia/AriLibFX/issues</url>
   </issueManagement>
 </project>
