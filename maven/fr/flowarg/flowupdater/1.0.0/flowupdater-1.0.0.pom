@@ -7,6 +7,45 @@
   <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>FlowUpdater</name>
+  <repositories>
+    <repository>
+	  <id>fr.flowarg</id>
+      <name>FlowArgMaven</name>
+      <url>https://flowarg.github.io/maven/</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.9</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>21.0</version>
+      <scope>compile</scope>
+    </dependency>
+	<dependency>
+      <groupId>fr.flowarg</groupId>
+      <artifactId>flowmultitools</artifactId>
+      <version>1.0.1</version>
+      <scope>compile</scope>
+    </dependency>
+	<dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.8.6</version>
+      <scope>compile</scope>
+    </dependency>
+	<dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.6</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
   <description>FlowUpdater is a library for automatically update minecraft versions !</description>
   <url>https://github.com/FlowArg/FlowUpdater</url>
   <licenses>
