@@ -1,10 +1,10 @@
 {
   "mods": [
     {
-      "name": "vipium-1.2.2.jar",
-      "downloadURL": "https://flowarg.github.io/minecraft/launcher/vip/mods/vipium-1.2.2.jar",
-      "sha1": "551bfbf0ca7795f9deda11b04ea359f75b4e4b68",
-      "size": 198892
+      "name": "vipium-1.2.3.jar",
+      "downloadURL": "https://flowarg.github.io/minecraft/launcher/vip/mods/vipium-1.2.3.jar",
+      "sha1": "a02d4bc9650b1b32a44c72fe575e4c44184047b1",
+      "size": 212986
     }
   ]
 }
