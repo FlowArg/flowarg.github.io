@@ -10,8 +10,16 @@ body{
     background-color: #fff;
 }
 
+#particles-js { /* particles-js render div id */
+	width: 100%; /* setting width to all page */
+	height: 100%; /* setting height to all page */
+	background: black; /* background color of particles-js */
+	position: fixed; /* position fixed */
+}
+
 .p{
     text-align: left;
-    color: black;
+    color: white; /* background of particles-js is black, I inverted the colors to see the text */
+	position: relative; /* I changed position to relative to make it visible when particles are on */
     font-size: x-large;
 }
