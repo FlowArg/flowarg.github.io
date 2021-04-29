@@ -20,16 +20,16 @@ body{
 }
 
 .p{
-    position: absolute; /* postulat de départ */
+    position: absolute;
 
     text-align: center;
     font-size: x-large;
     font-weight: bold;
-    color: white; /* background of particles-js is black, I inverted the colors to see the text */
+    color: white;
 
     margin: auto auto;
-    top: 50%; left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .a {
