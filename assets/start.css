@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -18,8 +20,18 @@ body{
 }
 
 .p{
-    text-align: left;
-    color: white; /* background of particles-js is black, I inverted the colors to see the text */
-	position: relative; /* I changed position to relative to make it visible when particles are on */
+    position: absolute; /* postulat de départ */
+
+    text-align: center;
     font-size: x-large;
+    font-weight: bold;
+    color: white; /* background of particles-js is black, I inverted the colors to see the text */
+
+    margin: auto auto;
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.a {
+  font-weight: bold;
 }
