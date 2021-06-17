@@ -159,8 +159,6 @@ function updateElements() {
     }
 }
 
-updateElements();
-
 function setupBack() {
     function goBack() {
         if (current_path != "maven/") {
@@ -201,3 +199,8 @@ function setupBack() {
         }
     };
 }
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    updateElements();
+    setupBack();
+});
