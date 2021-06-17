@@ -1,24 +1,24 @@
-body{
+body {
     font-family: Consolas, serif;
     margin: 50px 10px;
     background: black;
     color: white;
 }
 
-a{
+a {
     color: lime;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
-li{
+li {
     margin: 2px;
     padding: 2px;
 }
 
-.light{
+.light {
     background: #111;
 }

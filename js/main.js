@@ -1,6 +1,5 @@
-var current_path = "maven/";
-
-function replaceLast(origin, text) {
+String.prototype.removeLast = function (text) {
+    let origin = this;
     textLenght = text.length;
     originLen = origin.length;
     if (textLenght == 0) return origin;
@@ -30,9 +29,11 @@ function replaceLast(origin, text) {
         start = origin.substring(0, i);
         return start + end;
     }
-}
+};
 
-var avaible_paths = {
+
+var current_path = "maven/";
+const avaible_paths = {
     maven: {
         fr: {
             arinonia: {
@@ -118,7 +119,7 @@ function updateElements() {
     $("#current_path").text("Index of " + current_path);
     $("li").remove();
 
-    var dirs = eval('avaible_paths["' + replaceLast(current_path, "/").split("/").join('"]["') + '"]'); // avaible_paths["maven"]["fr"]...
+    var dirs = eval('avaible_paths["' + current_path.removeLast("/").split("/").join('"]["') + '"]'); // avaible_paths["maven"]["fr"]...
 
     let count = 0;
 
@@ -158,38 +159,45 @@ function updateElements() {
     }
 }
 
-function goBack() {
-    let _path = replaceLast(current_path, "/");
-    let splitted_path = _path.split("/");
-    _path = replaceLast(_path, splitted_path[splitted_path.length - 1]);
-    current_path = _path;
+updateElements();
 
-    updateElements();
-}
+function setupBack() {
+    function goBack() {
+        if (current_path != "maven/") {
+            let _path = current_path.removeLast("/");
+            let splitted_path = _path.split("/");
+            current_path = _path.removeLast(splitted_path[splitted_path.length - 1]);
 
-window.onload = function () {
-    if (typeof history.pushState === "function") {
-        history.pushState("jibberish", null, null);
-        window.onpopstate = function () {
-            history.pushState("newjibberish", null, null);
-            // Handle the back (or forward) buttons here
-            // Will NOT handle refresh, use onbeforeunload for this.
-            goBack();
-        };
-    } else {
-        var ignoreHashChange = true;
-        window.onhashchange = function () {
-            if (!ignoreHashChange) {
-                ignoreHashChange = true;
-                window.location.hash = Math.random();
-                // Detect and redirect change here
-                // Works in older FF and IE9
-                // * it does mess with your hash symbol (anchor?) pound sign
-                // delimiter on the end of the URL
-            } else {
-                ignoreHashChange = false;
-            }
-            goBack();
-        };
+            updateElements();
+        } else {
+            window.location = new String(window.location).removeLast(current_path);
+        }
     }
-};
+
+    window.onload = function () {
+        if (typeof history.pushState === "function") {
+            history.pushState("jibberish", null, null);
+            window.onpopstate = function () {
+                history.pushState("newjibberish", null, null);
+                // Handle the back (or forward) buttons here
+                // Will NOT handle refresh, use onbeforeunload for this.
+                goBack();
+            };
+        } else {
+            var ignoreHashChange = true;
+            window.onhashchange = function () {
+                if (!ignoreHashChange) {
+                    ignoreHashChange = true;
+                    window.location.hash = Math.random();
+                    // Detect and redirect change here
+                    // Works in older FF and IE9
+                    // * it does mess with your hash symbol (anchor?) pound sign
+                    // delimiter on the end of the URL
+                } else {
+                    ignoreHashChange = false;
+                }
+                goBack();
+            };
+        }
+    };
+}
