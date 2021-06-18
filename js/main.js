@@ -116,8 +116,11 @@ function clicked_link(clicked_path) {
 }
 
 function updateElements() {
-    $("#current_path").text("Index of " + current_path);
-    $("li").remove();
+    document.getElementById("current_path").innerHTML = "Index of " + current_path;
+    let links = document.getElementsByTagName("li");
+    while (links.length > 0) {
+        links[0].remove();
+    }
 
     var dirs = eval('avaible_paths["' + current_path.removeLast("/").split("/").join('"]["') + '"]'); // avaible_paths["maven"]["fr"]...
 
@@ -131,12 +134,12 @@ function updateElements() {
             var link = document.createElement("LI");
             link.className = count % 2 === 0 ? "dark" : "light";
 
-            var _clickable = document.createElement("A");
-            _clickable.href = `${current_path.replace("maven/", "")}${dir}`; // replace nedded or it'll result in maven/maven/fr/...
-            _clickable.innerHTML = `${dir}`;
+            var clickable = document.createElement("A");
+            clickable.href = `${current_path.replace("maven/", "")}${dir}`; // replace nedded or it'll result in maven/maven/fr/...
+            clickable.innerHTML = `${dir}`;
 
-            link.appendChild(_clickable);
-            $("ul").append(link);
+            link.appendChild(clickable);
+            document.getElementById("link_handler").append(link);
 
             count += 1;
         }
@@ -147,12 +150,12 @@ function updateElements() {
             var link = document.createElement("LI");
             link.className = count % 2 === 0 ? "dark" : "light";
 
-            var _clickable = document.createElement("A");
-            _clickable.href = `javascript:clicked_link("${dir}/")`;
-            _clickable.innerHTML = `${dir}`;
+            var clickable = document.createElement("A");
+            clickable.href = `javascript:clicked_link("${dir}/")`;
+            clickable.innerHTML = `${dir}`;
 
-            link.appendChild(_clickable);
-            $("ul").append(link);
+            link.appendChild(clickable);
+            document.getElementById("link_handler").append(link);
 
             count += 1;
         }
